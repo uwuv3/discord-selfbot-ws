@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+
+    /* Discord Theme Colors */
+    --discord-bg: 220 13% 18%;
+    --discord-dark: 223 7% 20%;
+    --discord-darker: 225 6% 13%;
+    --discord-light: 210 11% 71%;
+    --discord-muted: 215 9% 62%;
+    --discord-blurple: 235 86% 65%;
+    --discord-green: 139 47% 57%;
+    --discord-red: 359 83% 59%;
+    --discord-yellow: 45 100% 60%;
+
+    /* Sidebar variables */
+    --sidebar-background: hsl(var(--discord-dark));
+    --sidebar-foreground: hsl(var(--discord-light));
+    --sidebar-primary: hsl(var(--discord-blurple));
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: hsl(var(--discord-darker));
+    --sidebar-accent-foreground: hsl(var(--discord-light));
+    --sidebar-border: hsl(var(--discord-darker));
+    --sidebar-ring: hsl(var(--discord-blurple));
+  }
+
+  .dark {
+    --background: var(--discord-bg);
+    --foreground: var(--discord-light);
+    --card: var(--discord-dark);
+    --card-foreground: var(--discord-light);
+    --popover: var(--discord-dark);
+    --popover-foreground: var(--discord-light);
+    --primary: var(--discord-blurple);
+    --primary-foreground: 210 40% 98%;
+    --secondary: var(--discord-darker);
+    --secondary-foreground: var(--discord-light);
+    --muted: var(--discord-darker);
+    --muted-foreground: var(--discord-muted);
+    --accent: var(--discord-darker);
+    --accent-foreground: var(--discord-light);
+    --destructive: var(--discord-red);
+    --destructive-foreground: 210 40% 98%;
+    --border: var(--discord-darker);
+    --input: var(--discord-darker);
+    --ring: var(--discord-blurple);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

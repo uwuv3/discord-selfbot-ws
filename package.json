@@ -1,0 +1,41 @@
+{
+  "name": "owo-farm-bot",
+  "version": "0.0.1-beta",
+  "description": "An discord bot farm bot with websocket connections",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node .",
+    "dev": "npm run build && npm run start"
+  },
+  "keywords": [
+    "owo",
+    "farm",
+    "discord"
+  ],
+  "author": "uwuv3",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^2.2.0",
+    "chalk": "^5.4.1",
+    "discord-api-types": "^0.38.11",
+    "events": "^3.3.0",
+    "express": "^5.1.0",
+    "os": "^0.1.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.8",
+    "winston": "^3.17.0",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.6",
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.8.3"
+  }
+}
